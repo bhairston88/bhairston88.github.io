@@ -1,7 +1,199 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with Github Pages.</p>
-</body>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="personal portfolio, web developer, full-stack developer">
+        <meta name="description" content="Brooklyn Hairston's personal portfolio">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link href="https://www.modularscale.com/?1&em&1.35">
+        <title>Brooklyn Hairston</title>
+        <script src="portfolio.js"></script>
+    </head>
+    <body>
+        <div class="header">
+        <section id="home">
+            <h1><img id="icon" src="images/books.jpeg">Brooklyn Hairston</h1>
+            <p>A full-stack developer with innumerable stacks of books.</p>
+        <div class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+        </div>
+        </section>
+        </div>
+        
+        <section id="about">
+           
+            <h1>About</h1>
+            <img id="profile" src="images/Brooklyn.png" alt="selfie of a young black woman" style="max-width:100%;">
+            <p id="bio">I’m a full stack developer who loves the creativity of front-end design and the technical side of back-end development.  When I’m not busy learning code and growing as a developer, I can be found face first in a book or deep in a new crotchet project.  Creating new things is my passion, so I’m always excited to delve into a project and bring something fresh and innovative to life.  My love of books led me to wanting to write my own stories and I am currently working on a young adult fantasy novel, which I hope to one day get published.  </p>
+        </section>
+
+        <section id="gallery">
+
+            <h1>Gallery</h1>
+
+            <h2>Web Development</h2>
+
+            <div class="row">
+                <div class="column">
+                    <img src="images/web231.png" onclick="openModal();currentSlide(1)" class="hover-shadow" id="thumbnail">
+                </div>
+                <div class="column">
+                    <img src="images/web330.png" onclick="openModal();currentSlide(2)" class="hover-shadow" id="thumbnail">
+                </div>
+            </div> 
+            
+            <div id="wdModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="Slides">
+                        <div class="numbertext">1 / 2</div>
+                            <div class="clearfix"><img class="modalimg" src="images/web231.png" style="width:50%">
+                            <p id="modaltext">Web Development 231: Enterprise JavaScript I Repository.  Contains all assignments completed for WEB 231<br />
+                            <a href="https://github.com/bhairston88/web-231">WEB 231 Repository</a></p>
+                            </div>
+                    </div>
+
+                    <div class="Slides">
+                        <div class="numbertext">2 / 2</div>
+                            <div class="clearfix"><img class="modalimg" src="images/web330.png" style="width:50%">
+                            <p id="modaltext">Web Development 330: Enterprise JavaScript II Repository. Contains all assignments completed for WEB 330<br />
+                            <a href="https://github.com/bhairston88/web-330">WEB 330 Repository</a></p>
+                            </div>        
+                    </div>
+
+                    <div class="Slides</div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="images/web231.png" style="width:100%" onclick="currentSlide(1)" alt="Repository">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/web330.png" style="width:100%" onclick="currentSlide(2)" alt="Repository">
+                    </div>
+                </div>
+            </div>
+
+            <h2>Prototypes</h2>
+            <div class="row">
+                <div class="column">
+                    <img src="images/biositeproto.png" onclick="openModal();currentSlide(1)" class="hover-shadow" id="thumbnail">
+                    <figcaption><a href="https://github.com/bhairston88/bioSite">BioSite Prototype</a></figcaption>
+                </div>
+                <div class="column">
+                    <img src="" onclick="openModal();currentSlide()" class="hover-shadow" id="thumbnail">
+                </div>
+            </div> 
+            
+            <div id="pModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="pSlides">
+                        <div class="numbertext"> / </div>
+                        <img src="images/biositeproto.png" style="width:100%">
+                        <p id="modaltext">Repository for BioSite prototype.<br />
+                            <a href="https://github.com/bhairston88/bioSite"></a></p>
+                    </div>
+
+                    <div class="pSlides">
+                        <div class="numbertext"> / </div>
+                        <img src="" style="width:100%">
+                        <p id="modaltext">Repository for Personal Portfolio prototype<br />
+                            <a href=""></a></p>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10096;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10097;</a>
+                
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="images/biositeproto.png" style="width:100%" onclick="currentSlide(1)" alt="Repository">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="" style="width:100%" onclick="currentSlide()" alt="Repository">
+                    </div>
+                </div>
+            </div>
+            
+            <h2>Finished Projects</h2>
+
+            <div class="row">
+                <div class="column">
+                    <img src="images/Biosite.png" onclick="openModal();currentSlide(1)" class="hover-shadow" id="thumbnail">
+                    <figcaption><a href="https://bhairston88.github.io/bioSite/">BioSite</a></figcaption>
+                </div>
+                <div class="column">
+                    <img src="" onclick="openModal();currentSlide()" class="hover-shadow" id="thumbnail">
+                </div>
+            </div> 
+            
+            <div id="fpModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="fpSlides">
+                        <div class="numbertext">1 / 1</div>
+                        <img src="images/Biosite.png" style="width:100%">
+                        <p>A biographical website created using html and css.<br />
+                            <a href="https://bhairston88.github.io/bioSite/">bioSite</a></p>
+                    </div>
+
+                    <div class="fpSlides">
+                        <div class="numbertext"> / </div>
+                        <img src="" style="width:100%">
+                        <p id="modaltext"><br />
+                            <a href=""></a></p>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10098;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10099;</a>
+                
+                    <div class="caption-container">
+                        <p id="caption3"></p>
+                    </div>
+
+                    <div class="column">
+                        <img class="demo3 cursor" src="images/Biosite.png" style="width:100%" onclick="currentSlide(1)" alt="Repository">
+                    </div>
+                    <div class="column">
+                        <img class="demo3 cursor" src="" style="width:100%" onclick="currentSlide()" alt="Repository">
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+
+        <section id="contact">
+            <h1>Contact</h1>
+            <fieldset>
+                <form>
+                    <label for="name">Name:</label><br />
+                    <input type="text" id="name" name="name"><br />
+                    <label for="email">Email:</label><br />
+                    <input type="text" id="email" name="email"><br />
+                    <label for="message">Message:</label><br />
+                    <textarea name="message" rows="20" cols="40"></textarea><br />
+                 <input type="submit" value="Submit">
+                </form>
+            </fieldset>
+            
+
+        </section>
+        
+    </body>
+</html>
