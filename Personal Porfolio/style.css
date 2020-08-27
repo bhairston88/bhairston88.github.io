@@ -1,0 +1,234 @@
+body {
+    background-color: #16213e;
+}
+
+.header {
+    background-image:url('images/stars.jpg');
+    height: 900px;
+    margin: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 6.053em;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+p {
+    color: #ffffff;
+    text-align: center;
+}
+
+#icon {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+p {
+    font-size: 3.322em;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #1a1a2e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2.46em;
+}
+
+.navbar a:hover {
+    background-color: #0f3460;
+    color: black;
+}
+
+#about,
+#gallery,
+#contact {
+    padding-top: 70px;
+}
+
+#profile {
+    float:left;
+    margin: 20px;
+}
+
+#bio {
+    text-align: justify;
+    padding: 0 15px 0 15px;
+    font-size: 2.46em;
+}
+
+h2 {
+    color: white;
+    font-size: 3.322em;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+.row > .column {
+    padding: 0 8px;
+}
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #1a1a2e;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Slides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: white;
+    font-size: 1.823em;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 25%;
+    right: 50px;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(161, 159, 159, 0.2), 0 6px 20px 0 rgba(216, 215, 215, 0.19);
+}
+
+#thumbnail {
+    cursor: pointer;
+    width: 200px;
+}
+
+#modaltext {
+    font-size: 1.823em;
+    color: white;
+    text-align: justify;
+    padding: 0 15px 0 15px;
+}
+
+.modalimg {
+    float:left;
+    margin: 20px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+fieldset {
+    width: 50%;
+    margin: auto;
+}
+
+form {
+    margin: auto;
+}
+
+#contact {
+    padding-bottom: 20px;
+}
