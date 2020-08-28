@@ -1,5 +1,6 @@
 body {
     background-color: #16213e;
+    font-family: "Montserrat", sans-serif;
 }
 
 .header {
@@ -13,6 +14,7 @@ h1 {
     font-size: 6.053em;
     margin: 0;
     padding: 0;
+    font-weight: 600;
 }
 
 h1,
@@ -76,6 +78,7 @@ h2 {
     font-size: 3.322em;
     text-align: center;
     padding-top: 20px;
+    font-weight: 400;
 }
 
 
@@ -220,6 +223,11 @@ img.hover-shadow {
     overflow: auto;
 }
 
+a  {
+    color:#056676;
+    font-weight: 300;
+}
+
 fieldset {
     width: 50%;
     margin: auto;
@@ -227,6 +235,11 @@ fieldset {
 
 form {
     margin: auto;
+}
+
+label {
+    color: white;
+    font-weight: 300;
 }
 
 #contact {
