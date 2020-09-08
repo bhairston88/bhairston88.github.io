@@ -3,6 +3,8 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+
+/* Header */
 .header {
     background-image:url('images/stars.jpg');
     height: 900px;
@@ -31,6 +33,7 @@ p {
 
 p {
     font-size: 3.322em;
+    
 }
 
 .navbar {
@@ -62,51 +65,97 @@ p {
     padding-top: 70px;
 }
 
+/* About Section */
+#about,
+#contact {
+    background-color: #133b5c;
+}
+
 #profile {
-    float:left;
-    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 #bio {
     text-align: justify;
-    padding: 0 15px 0 15px;
-    font-size: 2.46em;
+    font-size: 1.35em;
+    padding-left: 20px;
 }
 
-h2 {
+h3 {
     color: white;
-    font-size: 3.322em;
+    font-size: 2.46em;
     text-align: center;
-    padding-top: 20px;
     font-weight: 400;
 }
 
-
-
-.row > .column {
-    padding: 0 8px;
+.flex-container {
+    display: flex;
 }
 
-
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.right,
+.left {
+    width:50%;
 }
 
-.column {
-    float: left;
-    width: 50%;
+ul {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.823em;
+    color: white;
+    list-style: none;
+    padding-left: 0;
 }
+
+/* Projects */
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 4.484em;
+}
+
+#projects {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.nav {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.823em;
+    padding: 10px 14px;
+    background-color: #1a1a2e;
+}
+
+.nav a:hover {
+    background-color: #16213e;
+    color: white;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
 
 .modal {
     display: none;
     position: fixed;
     z-index: 1;
     padding-top: 100px;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -150,7 +199,7 @@ h2 {
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: white;
+    color: #f3babf;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
@@ -170,11 +219,11 @@ h2 {
 }
 
 .numbertext {
-    color: white;
+    color: #f3babf;
     font-size: 1.823em;
     padding: 8px 12px;
     position: absolute;
-    bottom: 25%;
+    bottom: 10%;
     right: 50px;
 }
 
@@ -204,11 +253,12 @@ img.hover-shadow {
 
 #thumbnail {
     cursor: pointer;
-    width: 200px;
+    width: 250px;
+    height: 250px;
 }
 
 #modaltext {
-    font-size: 1.823em;
+    font-size: 1.35em;
     color: white;
     text-align: justify;
     padding: 0 15px 0 15px;
@@ -228,20 +278,34 @@ a  {
     font-weight: 300;
 }
 
-fieldset {
-    width: 50%;
-    margin: auto;
-}
-
-form {
-    margin: auto;
-}
-
-label {
-    color: white;
-    font-weight: 300;
-}
+/*Contact*/
 
 #contact {
     padding-bottom: 20px;
+    padding-top: 20px;
 }
+
+#contactpic {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    object-fit: center;
+}
+
+#email {
+    color: white;
+}
+
+/*Footer*/
+
+footer {
+    color: #f3babf;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.35em;
+}
+
+
+
