@@ -145,6 +145,8 @@ h2 {
 .flex2 {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 
 }
 
@@ -294,6 +296,21 @@ a  {
 
 #email {
     color: white;
+}
+
+/*Diagrams*/
+
+#thumbnail2 img {
+    width: 250px;
+    height: 250px
+}
+
+.imgtext {
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.741em;
+    text-align: center
 }
 
 /*Footer*/
