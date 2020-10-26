@@ -61,7 +61,9 @@ p {
 
 #about,
 #gallery,
-#contact {
+#contact,
+#diagrams,
+#presentations {
     padding-top: 70px;
 }
 
@@ -298,6 +300,7 @@ a  {
     color: white;
 }
 
+
 /*Diagrams*/
 
 #thumbnail2 img {
@@ -312,6 +315,8 @@ a  {
     font-size: 0.741em;
     text-align: center
 }
+
+
 
 /*Footer*/
 
