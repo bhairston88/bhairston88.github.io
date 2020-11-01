@@ -311,10 +311,12 @@ a  {
 .imgtext {
     color: white;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
     font-size: 0.741em;
     text-align: center
 }
+
+
 
 
 
